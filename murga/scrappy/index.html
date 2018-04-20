@@ -1,0 +1,358 @@
+<!--by, waxvapour@gmail.com-->
+<!DOCTYPE html>
+<html>
+<!--METADATA content-->
+	<meta name="robots" content="noindex">
+	<meta http-equiv="refresh" content="300">
+	<meta name="author" content="VS">
+	<meta name="description" content="Mahagun Mywoods info">
+	<meta name="application-name" content="Tapasya Infratech">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="Mahagun Mywoods,MahagunMywoods,Tapasya Infratech,TapasyaInfratech">
+<!--METADATA content end-->
+<script src="caster.js"></script><link href="beat.css" type="text/css" rel="stylesheet" />
+<head><link rel="shortcut icon" href="fevi.ico"; type="image/ico" /><title>Mahagun Mywoods</title>
+
+</head>
+<body onload="setTimeout(on, 5000)">
+<div id="overlay">
+  <div id="cross" class="w3-bar w3-card w3-white"  onclick="off()"><p  class="W3-center" align="center">Close</p></div>
+
+  <div id="text"><a href="../index.html" target="_blank"><img src="catt.gif"/></a></div>
+</div>
+<!--parrlax effect-->
+<div class="bgimg">
+  <div class="caption">
+    <img src="logo.jpg" style="height:20%; width:20%; border-radius:10px;"/>
+		<!--autotype text-->
+		 <div class="container">
+		<h1 class="heading" data-target-resolver="">Mahagun Mywoods</h1>
+		
+		
+				<!--auto typetext script-->
+		<script>
+		var resolver = {
+  resolve: function resolve(options, callback) {
+    // The string to resolve
+    var resolveString = options.resolveString || options.element.getAttribute('data-target-resolver');
+    var combinedOptions = Object.assign({}, options, { resolveString: resolveString });
+
+    function getRandomInteger(min, max) {
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+    };
+
+    function randomCharacter(characters) {
+      return characters[getRandomInteger(0, characters.length - 1)];
+    };
+
+    function doRandomiserEffect(options, callback) {
+      var characters = options.characters;
+      var timeout = options.timeout;
+      var element = options.element;
+      var partialString = options.partialString;
+
+      var iterations = options.iterations;
+
+      setTimeout(function () {
+        if (iterations >= 0) {
+          var nextOptions = Object.assign({}, options, { iterations: iterations - 1 });
+
+          // Ensures partialString without the random character as the final state.
+          if (iterations === 0) {
+            element.textContent = partialString;
+          } else {
+            // Replaces the last character of partialString with a random character
+            element.textContent = partialString.substring(0, partialString.length - 1) + randomCharacter(characters);
+          }
+
+          doRandomiserEffect(nextOptions, callback);
+        } else if (typeof callback === "function") {
+          callback();
+        }
+      }, options.timeout);
+    };
+
+    function doResolverEffect(options, callback) {
+      var resolveString = options.resolveString;
+      var characters = options.characters;
+      var offset = options.offset;
+      var partialString = resolveString.substring(0, offset);
+      var combinedOptions = Object.assign({}, options, { partialString: partialString });
+
+      doRandomiserEffect(combinedOptions, function () {
+        var nextOptions = Object.assign({}, options, { offset: offset + 1 });
+
+        if (offset <= resolveString.length) {
+          doResolverEffect(nextOptions, callback);
+        } else if (typeof callback === "function") {
+          callback();
+        }
+      });
+    };
+
+    doResolverEffect(combinedOptions, callback);
+  }
+};
+
+
+var strings = ['"A home in the woods, yet in the city”','33 Buildings - 6500 units ','35 Acres ( 65% open) ','Pool Deck','Open Lawn','Mist Plaza','Nursing Home','Commercial Mart','Police Chowki, Auto/Taxi Stand','Adventure Park in Woods','Orchard','Natural Track','Picnic in the Woods','Woodland Plantation','Mywoods Boulevard'];
+
+var counter = 0;
+
+var options = {
+  // Initial position
+  offset: 0,
+  // Timeout between each random character
+  timeout: 2,
+  // Number of random characters to show
+  iterations: 10,
+  // Random characters to pick from
+  characters: ['|'],
+  // String to resolve
+  resolveString: strings[counter],
+  // The element
+  element: document.querySelector('[data-target-resolver]')
+};
+
+// Callback function when resolve completes
+function callback() {
+  setTimeout(function () {
+    counter++;
+
+    if (counter >= strings.length) {
+      counter = 0;
+    }
+
+    var nextOptions = Object.assign({}, options, { resolveString: strings[counter] });
+    resolver.resolve(nextOptions, callback);
+  }, 1000);
+}
+
+resolver.resolve(options, callback);
+		</script>
+		
+				<!--auto typetext script end-->
+
+		
+		</div>	
+	</div>
+</div>
+
+<!--foot-->
+<div class="into">
+  <h3>About Mahagun Mywoods</h3>
+<div class="into" >
+<div class="w3-container" style="padding:18px 16px; position:center; " id="about">
+  <p class="w3-center w3-large">some key features</p>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+     <table class="w3-table-all" align="center">
+	<tr><th>Project Size</th><th> </th><th>33 Buildings - 6500 units</th> 
+    </tr><tr>
+	<th>Project Area</th><th> </th><th>35 Acres ( 65% open)</th>
+    </tr><tr>
+	<th>Launch Date</th><th> </th><th>Oct, 2010</th>
+    </tr><tr>
+	<th>Location</th><th> </th><th>Sector 16 C, Greater Noida West</th>
+    </tr>
+	</table>
+	</div>
+  </div>
+  <br><br>
+<p class="w3-center w3-large"><span style="color:#4e4c4c;">"A home in the woods, yet in the city”</span> is a perfect way to describe Mahagun Mywoods. Designed by the renowned Hafeez Contractor, it spreads across an area of about 35 acres and conforms to pre-certified GOLD standards of IGBC. Extending to 3 phases of development, it is a township replete with self sufficient infrastructure including an array of amenities that include commercial space for meeting the daily requirements of residents, school, nursing home, 3 club houses exclusive to 3 phases of development complemented with swimming pool for kids and adults, gym, spa and multi-purpose halls. The outdoor recreational options include a unique woodlands plantation adventure parks in the woods, an orchard, natural track, meditation areas, and adventure trails/parks. Besides these the project also boasts of reflexology paths and senior citizens sit-outs. Sport options in the project include tennis court, basketball court, skating rink, box cricket and much more. The open garden encompasses jogging track, cycling track and also an amphitheater.<br></p>
+	 <p><button class="w3-button w3-light-grey w3-block" onclick="ree()">Possession Dates Wing Wise</button></p>
+<span id="pos">
+<p class="w3-center w3-large"> 
+ <table class="w3-table" align="center">
+	<tr><th>Wing 1,2,3</th><th>-</th><th>OC Obtained</th>
+	</tr><tr>
+	<th>Wing 4,5,6</th><th>-</th><th>June 2018</th>
+	</tr><tr>
+	<th>Wing 7,8</th><th>-</th><th>Dec 2019</th>
+	</tr><tr>
+	<th>Wing 9,10</th><th>-</th><th>June 2021</th>
+	</tr>
+	</table>
+	</p></span> 
+	
+	 </div></div> 
+</div>
+<div class="bgmimg">
+<div  id="captionaa">
+<div class="container">
+<a href="map.jpg" target="_blank">	
+	<h1 class="headin" data-target-resolver="">Mahagun Mywoods SiteMap</h1>
+	</div>   
+  <img src="map.jpg"  style="height:20%; width:40%; border-radius:7px;"/>
+		</a>
+</div> 
+</div>
+<div class="into">
+ <p><button class="w3-button w3-light-grey w3-block" onclick="gee()">some more Esters</button></p>
+ <span id="bas">
+	<p class="w3-center w3-large">
+	<ul style="list-style:circle;">
+	<li>Earthquake Resistant</li> 
+	<li>Children's Play Area</li> 
+	 <li>Sewage Treatment</li> 
+	 <li>Lift</li> 
+	 <li>Basketball</li> 
+	 <li>Cricket</li> 
+	 <li>Amphitheatre</li> 
+	 <li>Badminton</li> 
+	 <li>Internal Roads</li> 
+	 <li>Gymnasium</li> 
+	 <li>Volleyball</li> 
+	 <li>Spa</li> 
+	 <li>Security</li> 
+	 <li>Indoor Games</li> 
+	 <li>Tennis</li> 
+	 <li>Community Hall</li> 
+	 <li>Jogging Track</li>
+	 </ul>	</span>
+<p><button class="w3-button w3-light-grey w3-block" onclick="wee()">Flat Amenities</button></p>
+<span id="qow">
+<table class="w3-table" align="center">
+<tr>
+<th>Cupboards</th>
+</tr><tr>
+<th>Gas Line</th>
+</tr><tr>
+<th>Power Backup</th>
+</tr><tr>
+<th>Washing Machine Area</th>
+</tr>
+</table>
+</span>
+<p><button class="w3-button w3-light-grey w3-block" onclick="flor()">Floorings</button></p>
+<span id="flo">
+<table class="w3-table-all" align="center">
+<tr>
+<th>Balcony</th><th>:</th><th>Ceramic Tiles</th>
+</tr><tr>
+<th>Kitchen</th><th>:</th><th>Vitrified Tiles</th>
+</tr><tr>
+<th>Living/Dining</th><th>:</th><th>Vitrified Tiles</th>
+</tr><tr>
+<th>Master Bedroom</th><th>:</th><th>Laminated Wooden</th>
+</tr><tr>
+<th>Other Bedroom</th><th>:</th><th>Vitrified Tiles</th>
+</tr><tr>
+<th>Toilets</th><th>:</th><th>Ceramic Tiles</th>
+</tr>
+</table>
+</span>
+<p><button class="w3-button w3-light-grey w3-block" onclick="fit()">Fittings</button></p>
+<span id="fitt">
+<table class="w3-table-all" align="center">
+<tr>
+<th>Doors</th><th>:</th><th>Hardwood Frame Door</th>
+</tr><tr>
+<th>Electrical</th><th>:</th><th>Standard</th>
+</tr><tr>
+<th>Kitchen</th><th>:</th><th>Granite Platform with SS Sink</th>
+</tr><tr>
+<th>Windows</th><th>:</th><th>Powder Coated Aluminium Glazed Windows</th>
+</tr><tr>
+<th>Toilets</th><th>:</th><th>CP</th>
+</tr><tr>
+<th>Others</th><th>:</th><th>Standard</th>
+</tr>
+</table>
+</span>
+<p><button class="w3-button w3-light-grey w3-block" onclick="wall()">Walls</button></p>
+<span id="wal">
+<table class="w3-table-all" align="center">
+<tr>
+<th>Exterior</th><th>:</th><th>Texture</th>
+</tr><tr>
+<th>Interior</th><th>:</th><th>OBD</th>
+</tr><tr>
+<th>Kitchen</th><th>:</th><th>Ceramic Dado Tiles</th>
+</tr><tr>
+<th>Toilets</th><th>:</th><th>Ceramic Dado Tiles</th>
+</tr></table>
+</span>
+	</p>
+<p>
+<button class="w3-button w3-light-grey w3-block" onclick="flplan()">floor plans details</button></p>
+	<span id="flp">
+	<table class="w3-table-all w3-center" align="center">
+<tr>
+<th>2 BHK</th><th>
+<ul type="none">
+<li>850 sqft.</li>
+<li>880 sqft.</li>
+<li>935 sqft.</li>
+<li>960 sqft.</li>
+<li>1000 sqft.</li>
+<li>1100 sqft.</li>
+</ul></th>
+</tr><tr>
+<th>2.5 BHK</th><th>
+<ul type="none">
+<li>1110 sqft.</li>
+<li>1125 sqft.</li>
+<li>1190 sqft.</li>
+<li>1290 sqft.</li>
+</ul></th>
+</tr><tr>
+<th>3 BHK</th><th>
+<ul type="none">
+<li>1225 sqft.</li>
+<li>1235 sqft.</li>
+<li>1240 sqft.</li>
+<li>1370 sqft.</li>
+<li>1520 sqft.</li>
+<li>1545 sqft.</li>
+<li>1810 sqft.</li>
+</ul></th>
+</tr><tr>
+<th>4 BHK</th><th>
+<ul type="none">
+<li>2190 sqft.</li>
+</ul></th>
+</tr></table>
+</span>
+	</p>
+<p><button class="w3-button w3-light-grey w3-block" onclick="price()">price lists</button></p>
+<span id="pri">
+<a href="mywood123.pdf" target="_blank"><p><div class="w3-button w3-light-grey w3-block">wing 1,2 & 3</button></div></p></a>
+<a href="mywood456.pdf" target="_blank"><p><div class="w3-button w3-light-grey w3-block">wing 4,5 & 6</button></div></p></a>
+<a href="mywood89.pdf" target="_blank"><p><div class="w3-button w3-light-grey w3-block">wing 8 & 9</button></div></p></a>
+</span>
+	</p>
+</div>
+	 
+<div class="bgmimgm">
+<div  id="captionaa">
+<div class="container">
+	<a href="spec.jpg" target="_blank">	
+	<h1 class="headin" data-target-resolver="">Mahagun Mywoods Specifications</h1>
+	</div>   
+  <img src="spec.jpg"  style="height:20%; width:40%; border-radius:7px;"/>
+		</a>
+</div> 
+</div>
+<div class="into">
+<h3 class="w3-center"> RERA ID :  <span style="min-width:100%;"><b>UPRERAPRJ3330</b></span></h3><br>
+	 <p><button class="w3-button w3-light-grey w3-block" onclick="hee()">contact</button></p>
+	 <span id="visio"><p><button class="w3-button w3-light-grey w3-block"  onclick="mai()">mailid@site.com</button></p>
+	 <form id="mail" name="messeger">
+	 <table class="w3-table" align="center">
+<tr><th><input type="text" class="w3-input" placeholder="Name" style="text-align:center;" name="user_name"></th>
+<th><input type="text" class="w3-input" placeholder="E-mail" style="text-align:center;" name="user_mail"></th>
+</tr>
+<tr>
+<th colspan="2"><input type="textarea" class="w3-input" placeholder="message..." style="text-align:center;" name="user_msg"></th></tr>
+<tr>
+<th colspan="2"><p><button class="w3-button w3-light-grey w3-block"  onclick="mail_To_add()">Send_mail</button></th></p>
+</tr>
+</table></form>
+<p><button class="w3-button w3-light-grey w3-block"  onclick="a()">+91 00000000</button></p>
+<a href="../index.html"><p><button class="w3-button w3-light-grey w3-block">visit site</button></p></a>
+
+</span>
+	 </div>
+</body>
+</html>
